@@ -34,7 +34,7 @@ Comparing algorithm performance (Logistic Regression vs KNN)
 
 Clone this repository:
 
-git clone https://github.com/<your-username>/iris-flower-classification.git
+git clone https://github.com/<Sneaky17>/iris-flower-classification.git
 
 
 Navigate to the project folder:
