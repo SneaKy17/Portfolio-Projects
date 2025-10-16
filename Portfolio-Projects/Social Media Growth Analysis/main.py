@@ -4,7 +4,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# --- Step 1: Create sample social media data ---
 data = {
     'Post': ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'],
     'Likes': [120, 250, 180, 300, 220],
@@ -16,15 +15,14 @@ df = pd.DataFrame(data)
 print("✅ Sample Engagement Data:")
 print(df)
 
-# --- Step 2: Calculate engagement score ---
 df['Engagement_Score'] = df['Likes'] + df['Comments']*2 + df['Shares']*3
 print("\n📊 Engagement Score per Post:")
 print(df[['Post', 'Engagement_Score']])
 
-# --- Step 3: Visualization ---
 plt.figure(figsize=(8,5))
 plt.bar(df['Post'], df['Engagement_Score'], color='skyblue')
 plt.title('Social Media Post Engagement Analysis')
 plt.xlabel('Posts')
 plt.ylabel('Engagement Score')
 plt.show()
+
